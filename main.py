@@ -9,10 +9,13 @@ import pandas as pd
 import requests
 from PIL import Image
 from io import BytesIO
+import os
+from dotenv import load_dotenv
 
 # ------------------- CONFIG -------------------
-TWILIO_SID = "AC2f13a22f5b61fe0328ab626ec4c2c361"
-TWILIO_AUTH = "e6b4d4de070f8c640d9c2d931b46f561"
+load_dotenv()
+TWILIO_SID = os.getenv("TWILIO_SID")
+TWILIO_AUTH = os.getenv("TWILIO_AUTH")
 
 MODEL_PATH = "model/cotton_model.h5"
 CSV_PATH = "cotton_advisory_image.csv"
