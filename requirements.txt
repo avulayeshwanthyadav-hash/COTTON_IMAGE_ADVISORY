@@ -1,0 +1,9 @@
+fastapi
+uvicorn
+tensorflow
+numpy
+pandas
+pillow
+requests
+twilio
+python-multipart
