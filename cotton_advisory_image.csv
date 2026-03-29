@@ -1,5 +1,38 @@
-disease,en,hi,te
-bacterial_blight,"Symptoms: Water-soaked lesions on leaves.\nCause: Bacterial infection.\nAction: Remove infected leaves and spray Copper oxychloride.\nPrevention: Use certified seeds and avoid overhead irrigation.","लक्षण: पत्तियों पर पानी जैसे धब्बे।\nकारण: बैक्टीरिया संक्रमण।\nउपाय: संक्रमित पत्तियां हटाएं और कॉपर ऑक्सीक्लोराइड का छिड़काव करें।\nरोकथाम: प्रमाणित बीज का उपयोग करें।","లక్షణాలు: ఆకులపై నీటి మచ్చలు.\nకారణం: బ్యాక్టీరియా సంక్రమణ.\nచర్య: సోకిన ఆకులు తొలగించి కాపర్ ఆక్సీక్లోరైడ్ పిచికారీ చేయండి.\nనివారణ: ధృవీకరించిన విత్తనాలు వాడండి."
-leaf_curl,"Symptoms: Curled and deformed leaves.\nCause: Virus spread by whiteflies.\nAction: Remove affected plants and spray neem oil.\nPrevention: Control whiteflies and maintain field hygiene.","लक्षण: पत्तियां मुड़ जाती हैं।\nकारण: सफेद मक्खी द्वारा फैलने वाला वायरस।\nउपाय: प्रभावित पौधे हटाएं और नीम तेल का छिड़काव करें।\nरोकथाम: सफेद मक्खी नियंत्रण।","లక్షణాలు: ఆకులు ముడుచుకుపోతాయి.\nకారణం: తెల్లఈగ ద్వారా వ్యాపించే వైరస్.\nచర్య: ప్రభావిత మొక్కలు తొలగించి వేప నూనె పిచికారీ చేయండి.\nనివారణ: తెల్లఈగ నియంత్రణ."
-fusarium_wilt,"Symptoms: Yellowing and wilting of leaves.\nCause: Soil-borne fungal infection.\nAction: Remove infected plants and improve drainage.\nPrevention: Crop rotation and resistant varieties.","लक्षण: पत्तियों का पीला पड़ना और मुरझाना।\nकारण: मिट्टी जनित फंगल संक्रमण।\nउपाय: संक्रमित पौधे हटाएं और जल निकासी सुधारें।\nरोकथाम: फसल चक्र अपनाएं।","లక్షణాలు: ఆకులు పసుపు రంగు మారి వాడిపోవడం.\nకారణం: నేలలో ఉండే ఫంగస్.\nచర్య: ప్రభావిత మొక్కలు తొలగించి నీటి పారుదల మెరుగుపరచండి.\nనివారణ: పంటల మార్పిడి."
-healthy,"Your cotton crop is healthy.\nNo disease symptoms detected.\nContinue regular monitoring and balanced fertilization.","आपकी कपास की फसल स्वस्थ है।\nकोई रोग नहीं पाया गया।\nनियमित निगरानी और संतुलित उर्वरक जारी रखें।","మీ పత్తి పంట ఆరోగ్యంగా ఉంది.\nఏ వ్యాధి లక్షణాలు లేవు.\nసాధారణ పర్యవేక్షణ కొనసాగించండి."
+disease,en,hi,te,hi_name,te_name
+bacterial_blight,"Symptoms: Water-soaked lesions on leaves.
+Cause: Bacterial infection.
+Action: Remove infected leaves and spray Copper oxychloride.
+Prevention: Use certified seeds and avoid overhead irrigation.","लक्षण: पत्तियों पर पानी जैसे धब्बे।
+कारण: बैक्टीरिया संक्रमण।
+उपाय: संक्रमित पत्तियां हटाएं और कॉपर ऑक्सीक्लोराइड का छिड़काव करें।
+रोकथाम: प्रमाणित बीज का उपयोग करें।","లక్షణాలు: ఆకులపై నీటి మచ్చలు.
+కారణం: బ్యాక్టీరియా సంక్రమణ.
+చర్య: సోకిన ఆకులు తొలగించి కాపర్ ఆక్సీక్లోరైడ్ పిచికారీ చేయండి.
+నివారణ: ధృవీకరించిన విత్తనాలు వాడండి।","बैक्टीरियल ब्लाइट","బాక్టీరియల్ బ్లైట్"
+leaf_curl,"Symptoms: Curled and deformed leaves.
+Cause: Virus spread by whiteflies.
+Action: Remove affected plants and spray neem oil.
+Prevention: Control whiteflies and maintain field hygiene.","लक्षण: पत्तियां मुड़ जाती हैं।
+कारण: सफेद मक्खी द्वारा फैलने वाला वायरस।
+उपाय: प्रभावित पौधे हटाएं और नीम तेल का छिड़काव करें।
+रोकथाम: सफेद मक्खी नियंत्रण।","లక్షణాలు: ఆకులు ముడుచుకుపోతాయి.
+కారణం: తెల్లఈగ ద్వారా వ్యాపించే వైరస్.
+చర్య: ప్రభావిత మొక్కలు తొలగించి వేప నూనె పిచికారీ చేయండి.
+నివారణ: తెల్లఈగ నియంత్రణ।","पत्ती मुड़ना रोग","ఆకు ముడుచుకుపోవడం"
+fusarium_wilt,"Symptoms: Yellowing and wilting of leaves.
+Cause: Soil-borne fungal infection.
+Action: Remove infected plants and improve drainage.
+Prevention: Crop rotation and resistant varieties.","लक्षण: पत्तियों का पीला पड़ना और मुरझाना।
+कारण: मिट्टी जनित फंगल संक्रमण।
+उपाय: संक्रमित पौधे हटाएं और जल निकासी सुधारें।
+रोकथाम: फसल चक्र अपनाएं।","లక్షణాలు: ఆకులు పసుపు రంగు మారి వాడిపోవడం.
+కారణం: నేలలో ఉండే ఫంగస్.
+చర్య: ప్రభావిత మొక్కలు తొలగించి నీటి పారుదల మెరుగుపరచండి.
+నివారణ: పంటల మార్పిడి।","फ्यूजेरियम विल्ट","ఫ్యూసేరియం విల్ట్"
+healthy,"Your cotton crop is healthy.
+No disease symptoms detected.
+Continue regular monitoring and balanced fertilization.","आपकी कपास की फसल स्वस्थ है।
+कोई रोग नहीं पाया गया।
+नियमित निगरानी और संतुलित उर्वरक जारी रखें।","మీ పత్తి పంట ఆరోగ్యంగా ఉంది.
+ఏ వ్యాధి లక్షణాలు లేవు.
+సాధారణ పర్యవేక్షణ కొనసాగించండి।","स्वस्थ फसल","ఆరోగ్యంగా ఉంది"
