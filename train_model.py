@@ -5,16 +5,17 @@ from tensorflow.keras.layers import Dense, GlobalAveragePooling2D
 from tensorflow.keras.models import Model
 from tensorflow.keras.optimizers import Adam
 import os
+import json
 
 # ---------------- CONFIG ----------------
 IMG_SIZE = 224
 BATCH_SIZE = 16
 EPOCHS = 20
-TRAIN_DIR = "dataset/train"  # your dataset folder
+TRAIN_DIR = "dataset/train"
 MODEL_PATH = "model/cotton_model.h5"
+CLASS_PATH = "model/classes.json"
 # ----------------------------------------
 
-# Augmented training data
 datagen = ImageDataGenerator(
     rescale=1./255,
     rotation_range=20,
@@ -31,20 +32,28 @@ train_data = datagen.flow_from_directory(
     class_mode="categorical"
 )
 
-# Base model
-base = MobileNetV2(weights="imagenet", include_top=False, input_shape=(IMG_SIZE, IMG_SIZE, 3))
+# Save class indices 🔥
+os.makedirs("model", exist_ok=True)
+with open(CLASS_PATH, "w") as f:
+    json.dump(train_data.class_indices, f)
+
+print("Class indices:", train_data.class_indices)
+
+# Model
+base = MobileNetV2(weights="imagenet", include_top=False,
+                   input_shape=(IMG_SIZE, IMG_SIZE, 3))
+
 x = GlobalAveragePooling2D()(base.output)
 output = Dense(train_data.num_classes, activation="softmax")(x)
 
 model = Model(base.input, output)
-model.compile(optimizer=Adam(learning_rate=0.0001), loss="categorical_crossentropy", metrics=["accuracy"])
-
-print("Class indices:", train_data.class_indices)  # important to match later
+model.compile(optimizer=Adam(learning_rate=0.0001),
+              loss="categorical_crossentropy",
+              metrics=["accuracy"])
 
 # Train
 model.fit(train_data, epochs=EPOCHS)
 
-# Save
-os.makedirs(os.path.dirname(MODEL_PATH), exist_ok=True)
+# Save model
 model.save(MODEL_PATH)
-print("Model saved at", MODEL_PATH)
+print("Model saved!")
